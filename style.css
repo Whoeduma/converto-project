@@ -1,0 +1,174 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    list-style: none;
+    color: #AACB73;
+    font-size: 17px;
+}
+
+/*textos*/
+h3{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+/*input*/
+input[type=number] {-moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input:focus{
+    outline: solid #285430;
+}
+
+/*buttons*/
+
+button{
+    cursor: pointer;
+}
+
+.button-medium {
+    background-color: hsl(172, 67%, 45%);
+    color: #5F8D4E;
+}
+
+.button-medium:hover{
+    background-color: rgb(159, 232, 223);
+}
+
+.button-light{
+    background-color: hsl(189, 41%, 97%);
+}
+
+.button-dark{
+    background-color: #5F8D4E;
+    color: #FFFFFF;
+}
+.button-dark:hover{
+    background-color: #5F8D4E;
+    color: hsl(183, 100%, 15%);
+}
+
+.button-dark{
+    background-color: #285430;
+    color: #FFFFFF;
+}
+
+body{
+    background-color: #E5EBB2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    width: 900px;
+    height: 480px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 100px);
+    padding: 50px;
+}
+
+.calculator input{
+    border: none;
+    background-color: #eaf3de;
+    height: 40px;
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-size: larger;
+    text-align: right;
+    line-height: normal;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.converter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px;
+}
+
+.calculator h2{
+    margin-top: 25px;
+}
+
+.converter button{
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.converter input{
+    width: calc(30% - 15px);
+    margin: 0;
+    height: 40px;
+    border: none;
+    padding-right: 15px;
+}
+
+.converter input::placeholder{
+    font-size: 17px;
+}
+
+.calculator label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tela{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(50% - 160px);
+    margin: 30px;
+    border-radius: 20px;
+    background-color: #285430;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.scream-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scream-content-value{
+    color: #26c2ad;
+    font-size: 23px;
+    max-width: 222px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scream button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.buttons{
+    display: flex;
+    height: 100%;
+    margin-top:150px;
+    gap: 15px;
+}
